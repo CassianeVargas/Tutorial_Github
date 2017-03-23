@@ -1,0 +1,60 @@
+
+h1{
+text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+color: 
+}
+
+div{
+height:200px;
+width:100%;
+animation-name: background;
+animation-duration: 4s;
+
+}
+
+@keyframes background {
+
+from  { background-color: #0d7216;}
+            
+to    { background-color: #0b9117;}
+    
+
+}
+
+
+
+
+body { background-color: #333; }
+
+.asterisco {
+  transform: translateX(0px) rotate(0deg);
+  animation: animAsterisco 2s infinite alternate;
+}
+
+@keyframes animAsterisco {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(200px) rotate(180deg);
+  }
+  75%, 100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.texto { 
+  transform: translateX(-300px);
+  animation: animTexto 2s infinite alternate;
+}
+
+@keyframes animTexto {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  75%, 100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
